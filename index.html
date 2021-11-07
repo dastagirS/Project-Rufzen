@@ -49,7 +49,7 @@
 				<svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>
 			  </span>
 			</button>
-	  
+	  		<!--slider1-->
 			<div class="product-slider__wrp swiper-wrapper">
 			  <div class="product-slider__item swiper-slide" data-target="img2">
 				<div class="product-slider__card">
@@ -105,6 +105,9 @@
 				  </div>
 				</div>
 			  </div>
+				
+				
+			<!--slider2-->
 			  <div class="product-slider__item swiper-slide" data-target="img1">
 				<div class="product-slider__card">
 				  <img src="https://res.cloudinary.com/dxi9wcchp/image/upload/v1635773422/wallpaperflare.com_wallpaper_1_zp604s.jpg"  class="product-slider__cover">
@@ -183,7 +186,7 @@
 	  </svg>
 </body>
 <style>
-	/* Umi Sans 400~900 굵기 폰트 import  */
+	
 @import url("https://fonts.googleapis.com/css?family=Dosis:400,600,700,800");
 @font-face {
   font-family: 'Uni Sans';
@@ -198,7 +201,7 @@
   font-style: normal;
 }
 
-/* reset */
+
 body {
   font-family: 'Uni Sans', sans-serif;
   font-weight: 500;
@@ -218,7 +221,6 @@ a {
 
 
 
-/* 버튼 */
 .icon {
   display: inline-block;
   width: 1em;
@@ -227,19 +229,19 @@ a {
   stroke: none;
   fill: #0d1e2e;
 }
-/* 배경  */
+
 .wrapper {
   width: 100%;
   height: 100vh;
   min-height: 750px;
-  background: url(https://res.cloudinary.com/muhammederdem/image/upload/v1536405234/starwars/death_star.jpg) center no-repeat;
+  background: url(https://res.cloudinary.com/dxi9wcchp/image/upload/v1635591816/donutsbg_vga9bi.jpg) center no-repeat;
   background-size: cover;
   position: relative;
   overflow: hidden;
   display: flex;
 }
 
-/*  */
+
 .content {
   height: 600px;
   margin: auto;
@@ -293,9 +295,7 @@ a {
   outline: none;
   cursor: pointer;
 }
-/* .next.disabled, .prev.disabled {
-  cursor: not-allowed;
-} */
+
 .next:focus, .prev:focus {
   outline: none;   
 }
@@ -617,7 +617,6 @@ a {
 }
 
 
-/* 미디어쿼리  */
 @media screen and (max-width: 1200px) {
   .content {
     max-width: 920px;
@@ -826,9 +825,7 @@ a {
         nextEl: '.next',
         prevEl: '.prev'
     },
-    // mousewheel: {
-    //     // invert: false
-    // },
+   
     on: {
         init: function(){
             var index = this.activeIndex;
